@@ -23,13 +23,44 @@
             allowing the figure to stand out. The calligraphy inscription adds a historical touch, reinforcing the
             cultural essence of this piece. Through this work, I express my deep admiration for traditional Chinese art.
         </p>
+        <img src="Puerto_Street.jpg" alt="Puerto Street" style="width: 220px;height: 300px;">
+        <p>This sketch captures the essence of a lively, historic street in a Puerto Rico.
+            Using fine ink lines, I depicted the charming architecture with intricate balconies, detailed facades, and
+            bustling urban life. The sloping street, filled with cars and pedestrians, adds depth and perspective,
+            guiding the viewer's eye into the distance. Overhead wires crisscross, enhancing the dynamic atmosphere. A
+            small ink blot unintentionally adds character to the scene. The interplay of light shading and precise lines
+            creates a sense of vibrancy, making this drawing a tribute to the timeless beauty of city streets.
+        </p>
     </main>
+    <div class="video_container">
+        <video controls>
+            <source src="figma.mp4" type="video/mp4">
+        </video>
+    </div>
+    <address>
+        Contact me!<br />
+        <a href="mailto:qq53@cornell.edu" style="color: white;">qq53@cornell.edu</a><br />
+        1 East Loop Road
+    </address>
+
     <footer>
-        <address>
-            Contact me!<br />
-            <a herf="qq53@cornell.edu">qq53@cornell.edu</a><br />
-            1 East Loop Road
-        </address>
+        <h3>Leave Your Comment</h3>
+        <p>(Here, I use an HTML input element that allows users to submit their information. This data is then sent to a
+            database using an API, where it is stored and retrieved when needed.)</p>
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <textarea id="comment" placeholder="Write your comment..." required></textarea><br>
+            <button type="submit">Submit</button>
+            <p>(Here I use a CSS transition
+                effect to highlight the submit button when users hover over it, reminding them to submit their
+                comments.)
+            </p>
+        </form>
+        <h3>Comments(API):</h3>
+        <ul id="comments-list"></ul>
+
+        <script src="api.js"></script>
     </footer>
 </body>
 

@@ -1,4 +1,150 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #252424;
     color: #ffffff;
+}
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; 
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 1100px; 
+    padding: 30px;
+}
+
+
+main img {
+    width: 120%;
+    max-width: 500px; 
+    height: auto;
+    object-fit: contain; 
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; 
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+.video_container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+
+main video {
+    width: 40%; 
+    max-width: 200px; 
+    height: auto;
+    border-radius: 10px;
+    display: block; 
+}
+
+footer {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8889897d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(199, 142, 142);
+}
+
+
+#comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#comments-list li {
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    main img {
+        max-width: 100%; 
+    }
+
+    main video {
+        width: 90%; 
+        max-width: 400px;
+    }
+
+    main p {
+        text-align: center; 
+    }
+
+    #comment-form {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
